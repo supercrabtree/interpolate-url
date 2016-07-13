@@ -17,3 +17,11 @@ test('it should do simple url interpolation', t => {
     'http://googs.com/6'
   );
 });
+
+test('it should do multiple param url interpolation', t => {
+  t.is(
+    interpolateUrl('http://googs.com/:house/:id', {id: 6, house: 'burn'}),
+    'http://googs.com/burn/6'
+  );
+});
+
