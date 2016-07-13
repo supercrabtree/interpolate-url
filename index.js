@@ -14,9 +14,14 @@ module.exports = function interpolateUrl(url, params) {
     } else {
       var segmentMatch = segment.match(/(\w+)(?:[?*])?(.*)/);
       var key = segmentMatch[1];
-      result.push('/' + params[key]);
+
+      if (params[key] !== undefined) {
+        result.push('/' + params[key]);
+      } else {
+        result.push('/:' + key);
+      }
+
       result.push(segmentMatch[2] || '');
-      delete params[key];
     }
   });
 

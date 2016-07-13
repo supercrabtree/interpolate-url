@@ -25,3 +25,10 @@ test('it should do multiple param url interpolation', t => {
   );
 });
 
+test('with a missing param it should return a half interpolated url', t => {
+  t.is(
+    interpolateUrl('http://googs.com/:house/:id/:action', {action: 'delete', house: 'burn'}),
+    'http://googs.com/burn/:id/delete'
+  );
+});
+
