@@ -32,3 +32,16 @@ test('with a missing param it should return a half interpolated url', t => {
   );
 });
 
+// test('it should understand ? as a delimiter', t => {
+//   t.is(
+//     interpolateUrl('http://googs.com/:id?boogers=tree', {id: 6}),
+//     'http://googs.com/6?boogers=tree'
+//   );
+// });
+
+// test('it should be able to interpolate query string params', t => {
+//   t.is(
+//     interpolateUrl('http://googs.com?boogers=:tree', {id: 6}),
+//     'http://googs.com/6?boogers=tree'
+//   );
+// });
