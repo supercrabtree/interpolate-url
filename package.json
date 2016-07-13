@@ -1,0 +1,29 @@
+{
+  "name": "interpolate-url",
+  "version": "0.0.0",
+  "description": "Interpolate urls containing /:colon variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "start": "ava --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supercrabtree/interpolate-url.git"
+  },
+  "keywords": [
+    "interpolate",
+    "url",
+    "variables",
+    "colon"
+  ],
+  "author": "George Crabtree <supercrabtree@googlemail.com> (https://github.com/supercrabtree)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supercrabtree/interpolate-url/issues"
+  },
+  "homepage": "https://github.com/supercrabtree/interpolate-url#readme",
+  "devDependencies": {
+    "ava": "0.15.2"
+  }
+}
