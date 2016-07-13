@@ -10,3 +10,10 @@ test('it should return empty string when passed null or undefined', t => {
   t.is(interpolateUrl(null), '');
   t.is(interpolateUrl(undefined), '');
 });
+
+test('it should do simple url interpolation', t => {
+  t.is(
+    interpolateUrl('http://googs.com/:id', {id: 6}),
+    'http://googs.com/6'
+  );
+});
