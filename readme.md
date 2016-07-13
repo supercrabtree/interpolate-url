@@ -1,5 +1,7 @@
 # interpolate-url
 
+[![Build Status](https://travis-ci.org/supercrabtree/interpolate-url.svg?branch=master)](https://travis-ci.org/supercrabtree/interpolate-url)
+
 Basic api to do url interpolation using colons as the delimiter.
 
 ```js
