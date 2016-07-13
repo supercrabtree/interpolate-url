@@ -1,6 +1,6 @@
 {
   "name": "interpolate-url",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Interpolate urls containing /:colon variables",
   "main": "index.js",
   "scripts": {
