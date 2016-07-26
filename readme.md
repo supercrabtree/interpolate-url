@@ -15,3 +15,11 @@ var url = interpolateUrl('http://google.com/:type/:id', {type: 'car', id: 10});
 
 // url => http://google.com/car/id
 ```
+
+Also allows partial interpolation:
+
+```js
+var url = interpolateUrl('http://google.com/:type/:id', {id: 10});
+
+// url => http://google.com/:type/id
+```
